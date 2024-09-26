@@ -37,8 +37,8 @@ class RolledDice extends Event
 `AppliesToState` has the same params as `StateId`, with an additional optional `id` param (after `state_type`) if you want to specify which prop belongs to which state.
 
 ```php
-#[AppliesToState(state_type: GameState::class, id: foo_id)]
-#[AppliesToState(state_type: PlayerState::class, id: bar_id)]
+#[AppliesToState(state_type: GameState::class, id: 'foo_id')]
+#[AppliesToState(state_type: PlayerState::class, id: 'bar_id')]
 class RolledDice extends Event
 {
     use PlayerAction;
